@@ -61,6 +61,12 @@ class Song {
         songs: [yellowLedbetter, daughter],
         });
 
+        let redhot = new Band({
+            id: 'red-hot',
+            name: 'Red Hot Chili Peppers',
+            songs: [],
+            });
+
         let fooFighters = new Band({
         id: 'foo-fighters',
         name: 'Foo Fighters',
@@ -73,7 +79,7 @@ class Song {
             songs: [funeral],
             });
 
-        return [ledZeppelin, pearlJam, fooFighters, yungblud];
+        return [ledZeppelin, pearlJam, fooFighters, yungblud, redhot];
         }
         }
         
