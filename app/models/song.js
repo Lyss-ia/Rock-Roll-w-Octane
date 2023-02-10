@@ -1,8 +1,15 @@
-export default class Song {
+import { tracked } from '@glimmer/tracking';
 
-    constructor({ title, rating, band }) {
+
+export default class Song { 
+    
+    @tracked rating;
+
+    constructor({ id, title, rating, band }, relationships = {}) {
+        this.id = id;
         this.title = title;
         this.rating = rating ?? 0;
         this.band = band;
+        this.relationships = relationships;        
     }
 }

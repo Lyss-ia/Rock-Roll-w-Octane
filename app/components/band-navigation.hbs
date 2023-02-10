@@ -1,0 +1,14 @@
+<nav class="flex mb-8 text-lg">
+    <div class="pb-1 {{if this.isActive.details "border-b-4 border-purple-400"}}">
+        <LinkTo @route="bands.band.details">
+            Details
+        </LinkTo>
+    </div>
+
+    
+    <div class="ml-4 pb-1 {{if this.isActive.songs "border-b-4 border-purple-400"}}">
+        <LinkTo @route="bands.band.songs">
+            Songs
+        </LinkTo>
+    </div>
+</nav>
